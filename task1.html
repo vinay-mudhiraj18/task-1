@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 1 </title>
+    <style>
+        
+        body {
+            font-family: 'Times New Roman', Times, serif;
+            text-align: center;
+            background-image: url('https://static.vecteezy.com/system/resources/previews/006/852/804/original/abstract-blue-background-simple-design-for-your-website-free-vector.jpg');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            color: white;
+            margin: 0;
+            padding: 20px;
+        }
+
+       
+        .container {
+            background: rgba(0, 6, 10, 0.6);
+            padding: 40px;
+            border-radius: 15px;
+            display: inline-block;
+            margin-top: 50px;
+        }
+
+        h1 {
+            color: #ffffff;
+            font-size: 36px;
+        }
+
+        p {
+            font-size: 20px;
+            color: #a4c0a8;
+        }
+
+        img {
+            width: 300px;
+            border-radius: 10px;
+            margin-top: 15px;
+        }
+
+      
+
+        
+        button {
+            display: block;
+            background-color: #90299e;
+            color: rgb(255, 255, 255);
+            border: none;
+            padding: 12px 20px;
+            font-size: 18px;
+            cursor: pointer;
+            border-radius: 8px;
+            transition: 0.3s ease;
+            margin-top: 20px;
+        }
+
+        button:hover {
+            background-color: #335e8b;
+            transform: scale(1.1);
+        }
+
+       
+        #info {
+            margin-top: 20px;
+            font-size: 18px;
+            font-weight: bold;
+            color: #ffd700;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>Welcome to My  Webpage</h1>
+        <p>THIS IS THE WEBSITE FOR DAY 1.</p>
+        
+        
+        <img src="https://upload.wikimedia.org/wikipedia/commons/4/44/Virat_Kohli_with_AudiQ7.png" alt="Virat Kohli">
+        
+        
+        <button onclick="showInfo()">Virat Kohli</button>
+        
+       
+        <p id="info"></p>
+         
+    </div>
+
+    <script>
+        function showInfo() {
+            document.getElementById("info").innerText = "Virat Kohli is one of the best cricketers in the world!";
+            window.open('https://en.wikipedia.org/wiki/Virat_Kohli', '_blank');
+        }
+    </script>
+
+</body>
+</html>
